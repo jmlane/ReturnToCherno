@@ -1,0 +1,54 @@
+class CfgFunctions
+{
+  class ASG
+  {
+    class earPro
+    {
+      class initEarPro {};
+    };
+  };
+
+  class SHF
+  {
+    class civilians
+    {
+      class switchSide {};
+    };
+
+    class tutorial
+    {
+      class addIntel {};
+      class deathstroke {};
+      class setIntelMarkers {};
+    };
+  };
+};
+
+class CfgORBAT
+{
+  class 135thMotorRifles
+  {
+    id = 35;
+    idType = 0;
+    side = "East";
+    size = "Brigade";
+    type = "MechanizedInfantry";
+    tags[] = {VSR};
+    text = "%1 Motor Rifle %3";
+    textShort = "%1 Motor Rifle %3";
+    description= "Russian Army Motor Rifle Bridage redeploying across the Black Mountains into Chernarus.";
+  };
+
+  class 207thCompositeAviation
+  {
+    id = 207;
+    idType = 0;
+    side = "East";
+    size = "Division";
+    type = "CombatAviation";
+    tags[] = {VSR};
+    text = "%1 Composite Aviation %3";
+    textShort = "%1 Composite Aviation %3";
+    description= "Russian Air Force Division supporting VSR Army from beyond the border.";
+  };
+};
