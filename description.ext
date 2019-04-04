@@ -22,6 +22,8 @@ class CfgFunctions
       class setIntelMarkers {};
     };
   };
+
+  #include "INC_undercover\cfgFunctions.hpp"
 };
 
 class CfgORBAT
@@ -50,5 +52,21 @@ class CfgORBAT
     text = "%1 Composite Aviation %3";
     textShort = "%1 Composite Aviation %3";
     description= "Russian Air Force Division supporting VSR Army from beyond the border.";
+  };
+};
+
+class Extended_InitPost_EventHandlers {
+  class CAManBase {
+    init = "_this call (compile preprocessFileLineNumbers 'postInitXEH.sqf')";
+  };
+};
+
+class CfgRemoteExec
+{
+  class Functions
+  {
+    mode = 2;
+    jip = 1;
+    #include "INC_undercover\functionsWhitelist.hpp"
   };
 };
