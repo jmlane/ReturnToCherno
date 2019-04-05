@@ -12,19 +12,19 @@ _undercoverUnitSide = west;             //What side is/are the undercover unit(s
 
 //-------------------------General Settings-------------------------
 
-_debug = false;                         //Set to true for debug
+_debug = true;                         //Set to true for debug
 _fullAIfunctionality = true;            //Enable all checks on AI (may degrade performace very slightly for large groups, 15+)
 _easyMode = true;                       //Disguise checks will also reveal if the player's disguise is working or not
 
-_racism = true;                         //Enemies will notice if you aren't the race of the faction you're pretending to be (making you easier to detect if nothing is covering your face)
+_racism = false;                         //Enemies will notice if you aren't the race of the faction you're pretending to be (making you easier to detect if nothing is covering your face)
 _racProfFacCiv = 1;                     //(Number) Multiplies the effect of racial profiling. Lower this number to simulate more multicultural civilian population
 _racProfFacEny = 1;                     //(Number) Multiplies the effect of racial profiling. Lower this number to simulate more multicultural enemy forces
 
 _regEnySide = east;                     //Units of this side will be classed as regular enemies and will share information about detected units across entire map (Side: can be east, west, independent) - if you don't need this, use sideEmpty.
-_regBarbaric = false;                   //(Bool - true or false) Will this side lash out on civilians if it takes casualties and doesn't know the attacker?
+_regBarbaric = true;                   //(Bool - true or false) Will this side lash out on civilians if it takes casualties and doesn't know the attacker?
 _regDetectRadius = 10;                  //Default detection radius for regular troops (this will expand and contract based on weather, time of day, and how the undercover unit is acting - civilians within this radius will be under much more scrutinty)
 
-_asymEnySide = sideEmpty;               //Units of this side will be classed as asymetric enemies (Side: can be east, west, independent) - if you don't need this, use sideEmpty.
+_asymEnySide = independent;               //Units of this side will be classed as asymetric enemies (Side: can be east, west, independent) - if you don't need this, use sideEmpty.
 _asymBarbaric = true;                   //(Bool - true or false) Will this side have a small chance of lashing out on civilians if it takes casualties and doesn't know the attacker?
 _asymDetectRadius = 15;                 //Default detection radius for asym troops (this will expand and contract based on weather, time of day, and how the undercover unit is acting - civilians within this radius will be under much more scrutinty)
 
@@ -32,7 +32,7 @@ _globalSuspicionModifier = 1;           //Scales the level of suspicion of enemi
 
 //-------------------------Civilian Disguise settings-------------------------
 
-_civFactions = ["CIV_F"]; //Array of factions whose vests are safe for undercover units to wear
+_civFactions = ["CIV_F", "CUP_C_CHERNARUS", "CUP_C_RU"]; //Array of factions whose vests are safe for undercover units to wear
 
 //(Array of classnames) Safe vests (on top of the specific factions above - useful if faction has randomisation script or to add items that are not used by the faction)
 _civilianVests = [];
@@ -55,7 +55,7 @@ _noOffRoad = false; //Civilian vehicles driving at speed more than 50 meters fro
 
 
 //-------------------------Enemy Disguise settings-------------------------
-_incogFactions = ["OPF_F","OPF_T_F"]; //Array of enemy factions whose items and vehicles will allow the player to impersonate the enemy
+_incogFactions = ["OPF_RU_F", "IND_RU_F", "CUP_O_ChDKZ", "CUP_O_RU"]; //Array of enemy factions whose items and vehicles will allow the player to impersonate the enemy
 
  //Names of additional markers for areas that would be considered trespassing (any with "INC_tre" - case sensitive - somewhere in the marker name will automatically be included)
 _trespassMarkers = [];

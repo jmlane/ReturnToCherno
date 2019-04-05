@@ -1109,6 +1109,7 @@ class Mission
 					class Attributes
 					{
 						rank="CAPTAIN";
+						init="call{this setVariable [""isSneaky"", true, true];}";
 						description="AEGIS Commander";
 						isPlayer=1;
 						isPlayable=1;
@@ -1280,6 +1281,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="call{this setVariable [""isSneaky"", true, true];}";
 						description="AEGIS Assistant Commander";
 						isPlayable=1;
 						class Inventory
@@ -1474,6 +1476,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="call{this setVariable [""isSneaky"", true, true];}";
 						description="AEGIS Operations Sergeant";
 						isPlayable=1;
 						class Inventory
@@ -1663,6 +1666,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="call{this setVariable [""isSneaky"", true, true];}";
 						description="AEGIS Assistant Operations Sergeant";
 						isPlayable=1;
 						class Inventory
@@ -1834,6 +1838,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="call{this setVariable [""isSneaky"", true, true];}";
 						description="AEGIS Weapons Sergeant";
 						isPlayable=1;
 						class Inventory
@@ -2008,6 +2013,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="call{this setVariable [""isSneaky"", true, true];}";
 						description="AEGIS Engineering Sergeant";
 						isPlayable=1;
 						class Inventory
@@ -2238,6 +2244,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="call{this setVariable [""isSneaky"", true, true];}";
 						description="AEGIS Medical Sergeant";
 						isPlayable=1;
 						class Inventory
@@ -2413,6 +2420,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="call{this setVariable [""isSneaky"", true, true];}";
 						description="AEGIS Communications Sergeant";
 						isPlayable=1;
 						class Inventory
